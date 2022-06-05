@@ -2,10 +2,21 @@
 
 
 ClineSegment::ClineSegment(CPoint startPoint, CPoint endPoint, uint32_t outLineColor)
-	: IShape(0, startPoint.GetDistance(endPoint), "LineSegment", outLineColor)
+	: Shape("line", outLineColor)
 	, m_startPoint(startPoint)
 	, m_endPoint(endPoint)
-{}
+{
+}
+double ClineSegment::GetArea() const
+{
+	return 0;
+}
+
+double ClineSegment::GetPerimeter() const
+{
+	return m_startPoint.GetDistance(m_endPoint);
+}
+
 CPoint ClineSegment::GetStartPoint() const
 {
 	return m_startPoint;

@@ -15,60 +15,60 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab4.cpp">
+    <ClCompile Include="Lab4_test.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CLineSegment.cpp">
+    <ClCompile Include="..\Lab4\CCircle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CTriangle.cpp">
+    <ClCompile Include="..\Lab4\CLineSegment.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CRectangle.cpp">
+    <ClCompile Include="..\Lab4\CRectangle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="CCircle.cpp">
+    <ClCompile Include="..\Lab4\CTriangle.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="WorkWithShapes.cpp">
+    <ClCompile Include="..\Lab4\WorkWithShapes.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SolidShape.cpp">
+    <ClCompile Include="..\Lab4\Shape.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="Shape.cpp">
+    <ClCompile Include="..\Lab4\SolidShape.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CPoint.h">
+    <ClInclude Include="..\Lab4\CCircle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="IShape.h">
+    <ClInclude Include="..\Lab4\CLineSegment.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CLineSegment.h">
+    <ClInclude Include="..\Lab4\CPoint.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="ISolidShape.h">
+    <ClInclude Include="..\Lab4\CRectangle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CTriangle.h">
+    <ClInclude Include="..\Lab4\CTriangle.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CRectangle.h">
+    <ClInclude Include="..\Lab4\IShape.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="CCircle.h">
+    <ClInclude Include="..\Lab4\ISolidShape.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="WorkWithShapes.h">
+    <ClInclude Include="..\Lab4\WorkWithShapes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="SolidShape.h">
+    <ClInclude Include="..\Lab4\SolidShape.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Shape.h">
+    <ClInclude Include="..\Lab4\Shape.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

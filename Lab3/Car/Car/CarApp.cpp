@@ -82,14 +82,78 @@ void SetSpeed(Car& car, string action)
     string value;
     value.append(action, action.find(" "));
     int speed = stoi(value);
-    
-    if (car.SetSpeed(speed))
+    switch (car.GetGear())
     {
-        cout << "Speed is changed\n";
-    }
-    else
-    {
-        cout << "Speed isn't changed\n";
+    case -1:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at -1 gear speed can be 0-20\n";
+        }
+        break;
+    case 0:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, car can't accelerating at 0 gear\n";
+        }
+        break;
+    case 1:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at 1 gear speed can be 0-30\n";
+        }
+        break;
+    case 2:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at 2 gear speed can be 20-50\n";
+        }
+        break;
+    case 3:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at 3 gear speed can be 30-60\n";
+        }
+        break;
+    case 4:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at 4 gear speed can be 40-90\n";
+        }
+        break;
+    case 5:
+        if (car.SetSpeed(speed))
+        {
+            cout << "Speed is changed\n";
+        }
+        else
+        {
+            cout << "Speed isn't changed, at 5 gear speed can be 50-150\n";
+        }
+        break;
     }
 }
 int GetAction(const string in)

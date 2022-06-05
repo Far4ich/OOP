@@ -20,22 +20,30 @@ void TestTurningOnEngine()
 {
     Car car;
 
-    assert(car.TurnOnEngine());
+    car.TurnOnEngine();
+    assert(car.isTurnedOn());
+
+    cout << "Test TurnOnEngine is ok \n";
 }
 
 void TestTurningOffEngine()
 {
     Car car;
 
-    car.TurnOnEngine();
     car.TurnOffEngine();
     assert(!car.isTurnedOn());
 
+    car.TurnOnEngine();
     car.TurnOffEngine();
     assert(!car.isTurnedOn());
 
     car.TurnOnEngine();
     car.SetGear(1);
+    car.TurnOffEngine();
+    assert(car.isTurnedOn());
+
+    car.SetSpeed(10);
+    car.SetGear(0);
     car.TurnOffEngine();
     assert(car.isTurnedOn());
 
@@ -82,8 +90,8 @@ void TestSetGear()
     car.SetSpeed(0);
     car.SetGear(1);
     assert(car.GetGear() == 1);
-    cout << "Test SetGear is ok \n";
 
+    cout << "Test SetGear is ok \n";
 }
 
 void TestSetSpeed()
@@ -103,11 +111,14 @@ void TestSetSpeed()
 
     car.SetSpeed(50);
     assert(car.GetSpeed() == 10);
+
     cout << "Test SetSpeed is ok \n";
 }
 
 int main()
 {
+    const Car car;
+    std::cout << car.GetSpeed();
     TestCarCreation();
     TestTurningOnEngine();
     TestTurningOffEngine();

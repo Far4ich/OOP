@@ -1,11 +1,13 @@
 #pragma once
-#include "ISolidShape.h"
+#include "SolidShape.h"
 #include "CPoint.h"
 
-class CRectangle : public ISolidShape
+class CRectangle : public SolidShape
 {
 public:
 	CRectangle(CPoint leftTop, CPoint rightBottom, uint32_t outLineColor, uint32_t fillColor);
+	double GetArea() const override;
+	double GetPerimeter() const override;
 	CPoint GetLeftTop() const;
 	CPoint GetRightBottom() const;
 	double GetWidth() const;
@@ -13,8 +15,4 @@ public:
 private:
 	CPoint m_leftTop;
 	CPoint m_rightBottom;
-	double m_width;
-	double m_height;
-	double FindArea(CPoint leftTop, CPoint rightBottom);
-	double FindPerimeter(CPoint leftTop, CPoint rightBottom);
 };

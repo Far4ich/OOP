@@ -18,11 +18,33 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lab4\CCircle.cpp" />
+    <ClCompile Include="..\Lab4\CLineSegment.cpp" />
+    <ClCompile Include="..\Lab4\CRectangle.cpp" />
+    <ClCompile Include="..\Lab4\CTriangle.cpp" />
+    <ClCompile Include="..\Lab4\Shape.cpp" />
+    <ClCompile Include="..\Lab4\SolidShape.cpp" />
+    <ClCompile Include="..\Lab4\WorkWithShapes.cpp" />
+    <ClCompile Include="Lab4_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lab4\CCircle.h" />
+    <ClInclude Include="..\Lab4\CLineSegment.h" />
+    <ClInclude Include="..\Lab4\CPoint.h" />
+    <ClInclude Include="..\Lab4\CRectangle.h" />
+    <ClInclude Include="..\Lab4\CTriangle.h" />
+    <ClInclude Include="..\Lab4\IShape.h" />
+    <ClInclude Include="..\Lab4\ISolidShape.h" />
+    <ClInclude Include="..\Lab4\Shape.h" />
+    <ClInclude Include="..\Lab4\SolidShape.h" />
+    <ClInclude Include="..\Lab4\WorkWithShapes.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f2d0af95-5c6e-4f59-b10d-facc4a0bad0e}</ProjectGuid>
-    <RootNamespace>Car</RootNamespace>
+    <ProjectGuid>{c1905e56-d74c-474c-9706-90c4b53d4022}</ProjectGuid>
+    <RootNamespace>Lab4test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,7 +64,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -138,14 +160,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="CarApp.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Car.h" />
-    <ClInclude Include="CarApp.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

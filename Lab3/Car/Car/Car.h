@@ -1,7 +1,9 @@
 #pragma once
 
+// Использовать scoped enum
 enum direction { forward, back, stay };
-
+//включение первой передачи при 20 скорости 2 передача
+//const свойствам
 class Car
 {
 public:
