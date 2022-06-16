@@ -102,7 +102,6 @@ SCENARIO("Binary operators test")
 	REQUIRE((vector / 2 == CVector3D(1, 1, 1)));
 }
 
-
 SCENARIO("Assignment expressions test")
 {
 	CVector3D vectorNull;
@@ -112,4 +111,20 @@ SCENARIO("Assignment expressions test")
 	REQUIRE(((CVector3D(5.0, 4.0, 3.0) -= vector) == CVector3D(3, 2, 1)));
 	REQUIRE(((vector *= 2) == CVector3D(4, 4, 4)));
 	REQUIRE(((vector /= 2) == CVector3D(2, 2, 2)));
+}
+
+SCENARIO("Input/output test")
+{
+	CVector3D vectorNull;
+	std::stringstream instr;
+	
+	instr << "1 2 3";
+	instr >> vectorNull;
+	REQUIRE((vectorNull.x == 1 && vectorNull.y == 2 && vectorNull.z == 3));
+
+	CVector3D vector(2.0, 2.0, 2.0);
+	std::ostringstream outstr;
+
+	outstr << vector;
+	REQUIRE("2, 2, 2" == outstr.str());
 }

@@ -1,7 +1,7 @@
 #pragma once
 #include "ISolidShape.h"
 #include "Shape.h"
-
+//избавится от ромбовидного наследования 
 class SolidShape : public ISolidShape, public Shape
 {
 public:

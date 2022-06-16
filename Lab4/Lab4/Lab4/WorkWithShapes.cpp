@@ -89,7 +89,8 @@ bool AddShape(const string in, vector<Shape*>& shapes)
 
 	uint32_t outLineColor;
 	sStream >> hex >> outLineColor >> dec;
-
+	//контроллер посмотреть у Малова
+	//функция добавления с парсингом
 	if (type == "line")
 	{
 		return AddLine(sStream, shapes, outLineColor);
@@ -124,7 +125,8 @@ Shape* GetBiggestAreaShape(const std::vector<Shape*> shapes)
 	if (shapes.size() != 0)
 	{
 		auto result = max_element(shapes.begin(), shapes.end(), AreaComparer);
-		return shapes[distance(shapes.begin(), result)];
+		//
+		return *result;//shapes[distance(shapes.begin(), result)];
 	}
 	return nullptr;
 }
@@ -138,13 +140,13 @@ Shape* GetSmallestPerimeterShape(const std::vector<Shape*> shapes)
 	if (shapes.size() != 0)
 	{
 		auto result = min_element(shapes.begin(), shapes.end(), PerimeterComparer);
-		return shapes[distance(shapes.begin(), result)];
+		return *result;//shapes[distance(shapes.begin(), result)];
 	}
 	return nullptr;
 }
 
 void PrintShape(Shape* shape)
-{
+{//ToString() вывод данных о фигуре
 	cout << shape->ToString() << "\n";
 	cout << "Area = " << shape->GetArea() << " Perimeter = " << shape->GetPerimeter() << "\n";
 

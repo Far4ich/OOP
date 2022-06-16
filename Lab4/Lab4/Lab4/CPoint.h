@@ -1,5 +1,6 @@
 #pragma once
-
+//структура
+//GetDistance вынести
 class CPoint
 {
 public:

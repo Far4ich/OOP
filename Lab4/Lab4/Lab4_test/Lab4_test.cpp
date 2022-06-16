@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN
 #include "../../../Catch/catch.hpp"
 #include "../Lab4/WorkWithShapes.h"
-
+//todo: проверка расчетов площади и периметра, высоты и ширины
 SCENARIO("Add line correct test")
 {
 	stringstream sStream;
